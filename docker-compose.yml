@@ -1,0 +1,11 @@
+
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: my-docker-app:latest
+    ports:
+      - "3000:3000"
+    restart: unless-stopped

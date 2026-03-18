@@ -1,0 +1,34 @@
+# Node modules — these should be installed inside the image
+node_modules
+
+# Local environment files
+.env
+
+# Logs
+npm-debug.log
+*.log
+
+# macOS
+.DS_Store
+
+# IDE/editor folders
+.vscode/
+.idea/
+
+# Git
+.git
+.gitignore
+
+# Build output / cache
+dist/
+build/
+coverage/
+
+# Temporary / packaging
+*.tgz
+
+# Dockerfile not needed in build context
+Dockerfile
+
+# Ignore node repl history
+.node_repl_history

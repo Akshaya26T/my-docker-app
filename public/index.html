@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Dynamic Web App</title>
+  <style>
+    body { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin: 2rem; }
+    .card { border: 1px solid #e0e0e0; padding: 1rem; border-radius: 8px; max-width: 700px; }
+    button { padding: 0.5rem 1rem; margin-right: 0.5rem; }
+    pre { background:#f7f7f7; padding:1rem; border-radius:6px; overflow:auto; }
+  </style>
+</head>
+<body>
+  <h1>Dynamic Web App</h1>
+  <div class="card">
+    <p>Server time: <strong id="time">—</strong></p>
+    <p>Random message: <em id="random">—</em></p>
+    <div>
+      <button id="refreshTime">Refresh Time</button>
+      <button id="getRandom">Get Random Message</button>
+    </div>
+    <hr>
+    <h3>Echo JSON</h3>
+    <textarea id="jsonInput" rows="6" style="width:100%">{"name":"Alice","age":30}</textarea>
+    <div style="margin-top:0.5rem">
+      <button id="sendEcho">Send Echo</button>
+    </div>
+    <h4>Response</h4>
+    <pre id="response">—</pre>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
