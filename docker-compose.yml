@@ -6,3 +6,8 @@ services:
     image: my-docker-app:latest
     ports:
       - "3000:3000"
+    networks:
+      - deployagent_default
+networks:
+  deployagent_default:
+    external: true
