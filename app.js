@@ -6,6 +6,10 @@ const PORT = process.env.PORT || 3000;
 app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.get('/health', (req, res) => {
+  res.status(200).json({ status: 'ok' });
+});
+
 // GET server time (ISO)
 app.get('/api/time', (req, res) => {
   res.json({ time: new Date().toISOString() });

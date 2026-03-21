@@ -7,7 +7,9 @@ services:
     ports:
       - "3000:3000"
     networks:
-      - deployagent_default
+      - app_network
+
 networks:
-  deployagent_default:
+  app_network:
     external: true
+    name: ${MY_NETWORK:-deployagent_default}
